@@ -8,6 +8,7 @@ async function seed() {
   try {
     console.log(cyan("📡 Connecting to the database..."));
     // Connect to the database
+    await db.sync();
 
     console.log(blue("🌱 Seeding the database..."));
 
